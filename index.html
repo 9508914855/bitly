@@ -1,13 +1,17 @@
-function shortenURL() {
-  var input = document.getElementById("url-input").value;
-  // Implement your logic here to shorten the URL and store it
-  // You can use a service like Bitly API or create your own URL shortening algorithm
-  
-  // Generate a unique timestamp-based identifier
-  var timestamp = Date.now();
-  
-  // Create the shortened URL by combining the base URL with the timestamp identifier
-  var shortenedURL = "https://9508914855.github.io/bitly/" + timestamp;
-  
-  document.getElementById("shortened-url").innerHTML = shortenedURL;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link Shortener</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Link Shortener</h1>
+    <input type="text" id="url-input" placeholder="Enter the URL to shorten">
+    <button onclick="shortenURL()">Shorten</button>
+    <p id="shortened-url"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
